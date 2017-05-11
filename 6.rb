@@ -1,10 +1,3 @@
-def mode(array)
-  seen = Hash.new(0)
-  array.each {|value| seen[value] += 1}
-  max = seen.values.max
-  seen.find_all {|value,i| i == max}.map {|value,i| value}
-end
-
 movies = {
   'Johnson Trail' => {
     realease_date: 'Wed, 21 Dec 2005',
